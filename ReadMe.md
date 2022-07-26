@@ -14,6 +14,14 @@ python manage.py runscript populate
 # test recommendation
 # More pregnancy related articles as input, less related articles are recommended
 python manage.py test
+# output: 
+#pregnancy article percentage:  20.77% (All articles)
+#pregnancy article percentage:  20.93% input pregnancy articles:  0 iterations: 500 articles: 50
+#pregnancy article percentage:  13.48% input pregnancy articles:  1 iterations: 500 articles: 50
+#pregnancy article percentage:   6.34% input pregnancy articles:  3 iterations: 500 articles: 50
+#pregnancy article percentage:   3.68% input pregnancy articles:  6 iterations: 500 articles: 50
+#pregnancy article percentage:   3.28% input pregnancy articles: 15 iterations: 500 articles: 50
+
 
 # test recommendation with a specific user
 
