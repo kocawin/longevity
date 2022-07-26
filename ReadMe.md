@@ -19,6 +19,9 @@ python manage.py test
 export DJANGO_SUPERUSER_PASSWORD=admin;python manage.py createsuperuser --username admin --email admin@admin.com --no-input --skip-checks 
 python manage.py runserver
 
-# go to http://localhost:8000/articles/ to interactively test the recommendation
+# go to http://localhost:8000/articles/?count-word=xxx to interactively test the recommendation
 # After close some articles, refresh the page to see the new recommendations.
+
+# ex: http://localhost:8000/articles/?count-word=pregnanc&total=50
+# After few pregnancy related articles are closed, pregnancy related articles will show up less frequently.
 ```
