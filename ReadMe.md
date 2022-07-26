@@ -3,8 +3,9 @@
 # usage
 
 ```bash
-# activate python environment
-pip install -r requirements.txt
+docker compose up
+docker exec -it longevity_web_1 bash
+
 python manage.py migrate
 # crawl all articles since many articles do not have title and abstract
 # python manage.py runscript get_articles
